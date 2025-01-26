@@ -25,3 +25,21 @@ docker-compose up
 ```
 
 then visit: http://localhost:3002
+
+### Dockerize a Flask App
+
+Add a requirements.txt file with these content:
+
+```txt
+Flask
+Flask-RESTful
+```
+
+then start the app with `docker-compose up`.
+
+Then save dependencies to requirements.txt file with:
+
+```bash
+docker exec -it docker-compose-in-12-minutes-api-1 /bin/bash
+pip freeze > requirements.txt
+```

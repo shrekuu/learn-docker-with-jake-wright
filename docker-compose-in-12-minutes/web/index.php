@@ -11,7 +11,7 @@
     <h1>Welcome to my shop</h1>
     <ul>
         <?php
-            $json = file_get_contents('http://product-service');
+            $json = file_get_contents('http://api');
             $obj = json_decode($json);
 
             $products = $obj->products;
